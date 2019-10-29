@@ -22,14 +22,35 @@ body {
     grid-template-columns: 4,4,4;
 }
 .col button{
-    background-color: white;
     padding: 10px;
     border: none;
     border-radius: 50%;
-    margin: 2px;
+    margin: 5px;
     height: 50px;
     width: 50px;
 }
-.col button:hover {
+.number:hover {
     background-color: rgb(216, 214, 214);
 }
+.number {
+    background-color: white;
+}
+.operand {
+    background-color: #fbc531;
+}
+.equal {
+    background-color: #2ecc71;
+}
+.clear {
+    background-color: rgb(255, 85, 85);
+}
+.operand:hover {
+    background-color: #fab700;
+}
+.equal:hover {
+    background-color: #0cfa6f;
+}
+.clear:hover {
+    background-color:red;
+}
+

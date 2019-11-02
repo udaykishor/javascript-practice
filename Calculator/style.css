@@ -6,6 +6,7 @@ body {
     margin: 0px;
     padding: 0px;
     background-image: linear-gradient(90deg, rgba(40, 228, 128, 1) 10%, rgba(196, 17, 227, 1) 90%);
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 #container {
@@ -64,6 +65,8 @@ body {
     margin: 5px;
     height: 50px;
     width: 50px;
+    font-size: 18px;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 

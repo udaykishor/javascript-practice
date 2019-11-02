@@ -33,7 +33,6 @@ function clear() {
     
 }
 function back() {
-    expression=document.querySelector("#insert").value;
     expression = str.substring(0, str.length-1);
     document.querySelector("#insert").value=expression;
 }

@@ -1,4 +1,4 @@
-var products = [{
+let product = [{
     "p_id": 201,
     "p_name": "apple iphone 11",
     "p_brand": "apple",

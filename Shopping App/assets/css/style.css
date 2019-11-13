@@ -1,14 +1,5 @@
 /* Specific Css */
-* {
-    box-sizing: border-box;
-}
-.container {
-    width: 1100px;
-    margin: 0 auto;
-}
-.row {
-    display: flex;
-}
+
 #products_list .product {
     box-shadow: 4px 4px 15px lightgray;
     margin-bottom: 20px;

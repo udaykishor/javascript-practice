@@ -23,15 +23,24 @@ function showProducts() {
         var btn = document.createElement("button");
         btn.innerHTML = "Add to Cart";
         btn.className = "btn btn-primary d-Block";
+        btn.title = obj.p_id;
         
         cardDiv.appendChild(title);
         cardDiv.appendChild(price);
         cardDiv.appendChild(btn);
-        // btn.addEventListener("click",addItem);
+        btn.addEventListener("click",addItem);
         childDiv.appendChild(img);
         childDiv.appendChild(cardDiv);
         
         
         parent_div.appendChild(childDiv);
+    })
+}
+function addItem() {
+    var p_id = event.srcElement.title;
+    products.forEach(function(x) {
+        if(x.p_id==p_id) {
+            object.addToCart(x.p_id, x.p_name, x.p_brand, x.p_category, x.p_price, x.p_img);
+        }
     })
 }

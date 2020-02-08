@@ -1,5 +1,8 @@
 window.addEventListener("load", initEvent);
 var expression = "";
+var num="";
+var old= "";
+var opr="";
 function initEvent() {
   var numbers = document.querySelectorAll(".number");
   var operand = document.querySelectorAll(".operand");
@@ -14,20 +17,14 @@ function initEvent() {
   document.querySelector(".back").addEventListener("click", back);
 }
 function appendNumbers() {
-  var num = event.srcElement.innerHTML;
-  expression += num;
+  num = event.srcElement.innerHTML;
+  expression = num;
   document.querySelector("#insert").value = expression;
 }
 function appendOperator() {
-  var num = event.srcElement.innerHTML;
-  expression += num;
-  if (expression.charAt(expression.length - 1) == '+'||expression.charAt(expression.length - 1) == '-'||expression.charAt(expression.length - 1) == '*'||expression.charAt(expression.length - 1) == '/') {
-    document.querySelector("#insert").value = expression;
-    expression = expression.substring(0, expression.length - 1);
-  } else {
-      
-  }
-}
+  opr = event.srcElement.innerHTML;
+  expression = num + opr;
+  
 function calc() {
   var result = eval(expression);
   document.querySelector("#result").value = result;
